@@ -81,6 +81,11 @@ color: #fff;
     width: 100%;
     z-index: 1050; /* Higher than header */
   }
+  .fa-sun{
+    color: #fff;
+  }
+  
+
 }
 
 
@@ -88,4 +93,35 @@ color: #fff;
 
 header span{
     color: var(--color_B);
+}
+header h2{
+  position: relative;
+  display: inline-block;
+  color: transparent;
+  -webkit-text-stroke: .7px var(--color_B);
+  animation: display-text 16s linear infinite;
+  animation-delay: calc(-5.33s * var(--i));
+}
+@keyframes display-text {
+  33.33%,100%{
+    display: none;
+  }
+}
+header h2::before{
+  content: attr(data-text);
+  position: absolute;
+  width: 0;
+  border-right: 4px solid var(--color_B);
+  color: var(--color_B);
+  white-space: nowrap;
+  overflow: hidden;
+  animation: fill-text 5.33s linear infinite;
+}
+@keyframes fill-text{
+  10%,100%{
+    width: 0;
+  }
+  70%,90%{
+    width: 100%;
+  }
 }
