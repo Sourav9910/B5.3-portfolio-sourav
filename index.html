@@ -49,7 +49,7 @@
             <li class="nav-item">
               <a class="nav-link" aria-current="page" href="#">Contact</a>
             </li>
-            <li class="nav-item d-flex align-items-center">
+            <li class="nav-item d-flex align-items-center justify-content-center">
               <button id="themeToggle" class="btn btn-sm px-5">
                 <i class="fa-solid fa-sun"></i>
               </button>
@@ -61,7 +61,7 @@
   </div>
 
   <!-- Header Section -->
-  <header class="container d-flex align-items-center" style="height: calc(100vh - 101px);">
+  <header class="container d-flex align-items-center" style="min-height: calc(100vh - 101px);">
     <div class="row">
       <div class="col-lg-6 order-0 order-lg-1 d-flex justify-content-center align-items-center">
         <img src="./img/souravpic.png" class="img-fluid h-75 bg-primary rounded-circle" alt="..." />
@@ -100,6 +100,90 @@
       </div>
     </div>
   </header>
+
+  <!-- about section -->
+  <div class="about">
+    <div class="container">
+      <div class="row">
+        <div class="about-col-1 col-lg-4 col-md-12">
+          <img src="img/sourav.png" class="img-fluid about-img" alt="Sourav Som's Photo">
+        </div>
+        <div class="about-col-2 col-lg-8 col-md-12 mt-4 mt-lg-0">
+          <h1 class="sub-title text-center">About Me</h1>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Temporibus recusandae magnam quis animi,
+            molestiae est facere totam delectus molestias eos ea necessitatibus, consequatur iste. Repellat qui, quae
+            quas porro quo itaque labore tempore voluptates nostrum fugit consequatur? Nesciunt, quod rem.</p>
+          <div class="tab-titles">
+            <span class="tab-links active-link" onclick="opentab('skills')">Skills</span>
+            <span class="tab-links" onclick="opentab('experience')">Experience</span>
+            <span class="tab-links" onclick="opentab('education')">Education</span>
+          </div>
+          <div class="tab-contents active-tab" id="skills">
+            <ul>
+              <li><span>Frontend Skills</span>
+                <br>
+                <div class="imges" style="padding: 20px 0;">
+                  <img src="img/html5.png" style="height: 70px;" alt="HTML5">
+                  <img src="img/css3.png" style="height: 70px;" alt="CSS3">
+                  <img src="img/js.png" style="height: 70px;" alt="JS">
+                  <img src="img/jquery.png" style="height: 70px;" alt="Jquery">
+                  <img src="img/bootstrap.png" style="height: 70px;" alt="bootstrap">
+                </div>
+              </li>
+              <li><span>Backend Skills</span>
+                <br>
+                <div class="imges" style="padding: 20px 0;">
+                  <img src="img/mysql1.png" height="70px" alt="">
+                  <img src="img/php1.png" height="80px" alt="">
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="tab-contents" id="experience">
+            <ul>
+              <li>"As a fresher, I am eager to apply my knowledge of web development, including HTML, CSS, JavaScript,
+                and front-end design, to create impactful projects. I am a quick learner, passionate about
+                problem-solving, and committed to continuously improving my skills to contribute effectively to a team."
+              </li>
+            </ul>
+          </div>
+          <div class="tab-contents" id="education">
+            <ul>
+              <li><span style="font-weight: bold;">MERN</span> Stack from Aptech</li><br>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Services Section -->
+   <div class="services">
+    <div class="container">
+      <h1 class="sub-title">My Services</h1>
+      <div class="row">
+          <div class="col-12 col-md-4 card">
+            <img src="img/web-development.jpeg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
+            </div>
+          </div>
+          <div class="col-12 col-md-4 card">
+            <img src="img/UI-UX pic.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
+            </div>
+          </div>
+          <div class="col-12 col-md-4 card">
+            <img src="img/web-design.webp" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
+            </div>
+          </div>
+      </div>
+    </div>
+   </div>
+
 
   <!-- Bootstrap JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
