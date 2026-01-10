@@ -42,3 +42,33 @@ function opentab(tabName) {
   document.getElementById(tabName).classList.add("active-tab");
 }
 
+// services card flip on click for mob view 
+  document.querySelectorAll(".flip-card").forEach(card => {
+    card.addEventListener("click", () => {
+      document.querySelectorAll(".flip-card").forEach(c => {
+        if (c !== card) c.classList.remove("is-flipped");
+      });
+      card.classList.toggle("is-flipped");
+    });
+  });
+// scroll to top button
+
+  const scrollBtn = document.querySelector('#scroll-up');
+
+
+        window.addEventListener('scroll', ()=>{
+            console.log(window.pageYOffset);
+            if(window.pageYOffset > 1500){
+                scrollBtn.style.display = "block";
+            }else{
+                scrollBtn.style.display = "none";
+            }
+
+        });
+
+        scrollBtn.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: "smooth"
+            })
+        });
